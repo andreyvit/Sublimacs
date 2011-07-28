@@ -48,13 +48,17 @@ The following keys are modified by this plugin:
 Contributor's Guide
 -------------------
 
-So how do you start writing Sublime Text 2 plugins? Turns out, it is very easy. A few points to get you started:
+So how do you start writing Sublime Text 2 plugins? Turns out, it is very easy. A few pointers:
 
-* see Sublimacs.py for the two key imported packages: `sublime` and `sublime_plugin`
+* use Tools > New Plugin (or see Sublimacs.py); there are two key imports: `sublime` and `sublime_plugin`
 * `sublime` is fully documented in [the API reference here](http://www.sublimetext.com/docs/2/api_reference.html)
 * `sublime_plugin` is also documented in the API reference, but you'd better read its source code which is included with Sublime; on my system it is in `/Applications/Sublime Text 2.app/Contents/MacOS/sublime_plugin.py`
 * read implementations of many existing Sublime commands in `~/Library/Application Support/Sublime Text 2/Packages/Default`
 * finally, see the implementations of Sublimacs commands in `Sublimacs.py`
+* Sublime automatically loads and reloads any files inside its packages directory, all key bindings, settings and listeners are applied live
+* open console window (View > Show Console) to interact with the built-in Python interpreter
+* in the console, use `view.run_command('foo_bar')` to run `FooBarCommand` (or generally use `view`, `window`, `sublime` objects to explore the API)
+* add custom key bindings for your commands in `Default (OSX).sublime-keymap`
 
 That should get you started with anything you might want to implement.
 
