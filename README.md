@@ -25,7 +25,7 @@ Installation
 ------------
 
     cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-    git clone http://github.com/andreyvit/sublimacs
+    git clone http://github.com/andreyvit/Sublimacs
 
 
 Key bindings
