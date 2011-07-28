@@ -1,0 +1,11 @@
+[
+	{ "keys": ["ctrl+w"], "command": "emacs_kill" },
+	{ "keys": ["alt+w"], "command": "emacs_save_to_kill_ring" },
+	{ "keys": ["ctrl+k"], "command": "emacs_kill_to_eol" },
+
+	{ "keys": ["ctrl+y"], "command": "emacs_yank" },
+	{ "keys": ["alt+y"], "command": "emacs_yank_previous" },
+	{ "keys": ["alt+shift+y"], "command": "emacs_yank_next" },
+	{ "keys": ["ctrl+space"], "command": "set_mark" },
+	{ "keys": ["alt+/"], "command": "auto_complete" }
+]
