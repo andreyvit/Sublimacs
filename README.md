@@ -38,6 +38,7 @@ The following keys are modified by this plugin:
 
     C-w               kill
     M-w               save to kill ring
+    C-k               kill to end of line
 
     C-y               yank
     M-y               yank previous
