@@ -7,5 +7,21 @@
 	{ "keys": ["alt+y"], "command": "emacs_yank_previous" },
 	{ "keys": ["alt+shift+y"], "command": "emacs_yank_next" },
 	{ "keys": ["ctrl+space"], "command": "set_mark" },
-	{ "keys": ["alt+/"], "command": "auto_complete" }
+	{ "keys": ["alt+/"], "command": "auto_complete" },
+
+    { "keys": ["alt+b"], "command": "move", "args": {"by": "subwords", "forward": false} },
+    { "keys": ["alt+f"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["alt+shift+b"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "keys": ["alt+shift+f"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+    { "keys": ["ctrl+x", "ctrl+u"], "command": "upper_case" },
+    { "keys": ["ctrl+x", "ctrl+l"], "command": "lower_case" },
+    { "keys": ["ctrl+x", "ctrl+a"], "command": "select_to_mark" },
+    { "keys": ["ctrl+x", "ctrl+w"], "command": "delete_to_mark" },
+    { "keys": ["ctrl+x", "ctrl+x"], "command": "swap_with_mark" },
+    { "keys": ["ctrl+x", "ctrl+s"], "command": "save" },
+
+    // { "keys": ["tab"], "command": "reindent" },
+
+    { "keys": ["ctrl+shift+-"], "command": "undo" }
 ]
