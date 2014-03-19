@@ -97,7 +97,7 @@ class Emacs(object):
 			if len(mark) == 0:
 				return None
 			another = mark[0]
-			print sublime.Region(region.begin(), another.begin())
+			print(sublime.Region(region.begin(), another.begin()))
 			return sublime.Region(region.begin(), another.begin())
 		else:
 			return region
